@@ -1,8 +1,8 @@
 ### Github Authorization
-GET http://localhost:8080/github HTTP/1.1
+GET http://localhost:{{port}}/github HTTP/1.1
 
 ### Authenticate User
-POST http://localhost:8080/authenticate HTTP/1.1
+POST http://localhost:{{port}}/authenticate HTTP/1.1
 Content-Type: application/json
 
 {
@@ -10,9 +10,9 @@ Content-Type: application/json
 }
 
 ### Create Message
-POST http://localhost:8080/message HTTP/1.1
+POST http://localhost:{{port}}/message HTTP/1.1
 Content-Type: application/json
-
+Authorization: Bearer {{token}}
 {
     "message": "Test message"
 }
