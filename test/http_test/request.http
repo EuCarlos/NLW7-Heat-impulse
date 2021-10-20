@@ -16,3 +16,9 @@ Authorization: Bearer {{token}}
 {
     "message": "Test message"
 }
+
+### GET LAST 3 MESSAGES
+GET http://localhost:{{port}}/messages/last3 HTTP/1.1
+
+### PROFILES USER
+GET http://localhost:{{port}}/profile HTTP/1.1
